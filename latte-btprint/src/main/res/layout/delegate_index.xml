@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@android:color/holo_orange_dark">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单选项"
+            android:gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+   <android.support.v7.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <android.support.v7.widget.AppCompatTextView
+           android:id="@+id/tv_index_title"
+           android:textSize="16sp"
+           android:textColor="@android:color/holo_orange_dark"
+           android:layout_width="match_parent"
+           android:gravity="center"
+           android:layout_height="wrap_content" />
+   </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="56dp">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_unsend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="待配送订单" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_sending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="配送中订单" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已送达订单" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图片上传" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="切换市场" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="账号注销" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

@@ -17,12 +17,15 @@ import com.flj.latte.btprint.index.IndexDelegate;
 import com.flj.latte.btprint.launcher.LauncherDelegate;
 import com.flj.latte.btprint.sign.ISignListener;
 import com.flj.latte.btprint.sign.SignInDelegate;
+import com.flj.latte.btprint.utils.PushUtils;
 import com.flj.latte.delegates.LatteDelegate;
 import com.flj.latte.ui.launcher.ILauncherListener;
 import com.flj.latte.ui.launcher.OnLauncherFinishTag;
 import com.pgyersdk.javabean.AppBean;
 import com.pgyersdk.update.PgyUpdateManager;
 import com.pgyersdk.update.UpdateManagerListener;
+
+import java.io.PushbackInputStream;
 
 import qiu.niorgai.StatusBarCompat;
 
@@ -89,6 +92,7 @@ public class ExampleActivity extends ProxyActivity implements
     @Override
     public void onSignInSuccess() {
         Toast.makeText(this, "登录成功", Toast.LENGTH_LONG).show();
+        PushUtils.initTags(getApplicationContext());
         getSupportDelegate().startWithPop(new IndexDelegate());
     }
 

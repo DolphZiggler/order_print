@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.diabin.fastec.example">
 
+
+
     <!-- 必选-->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取网络状态 -->
     <uses-permission android:name="android.permission.INTERNET" /> <!-- 网络通信-->
@@ -48,6 +50,9 @@
             android:name="PGYER_APPID"
             android:value="29137cfb3e26c17e3bbb389dc22c3658" >
         </meta-data>
+
+
+
         <activity android:name=".ExampleActivity">
 
             <intent-filter>

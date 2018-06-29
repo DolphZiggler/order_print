@@ -17,10 +17,17 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
 
+
         ndk {
             //选择要添加的对应cpu类型的.so库。
             abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
         }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : "com.diabin.fastec.examples",
+                JPUSH_APPKEY : "286ad32ab8442416b396a5b2",
+                JPUSH_CHANNEL : "developer-default",
+        ]
 
     }
     buildTypes {

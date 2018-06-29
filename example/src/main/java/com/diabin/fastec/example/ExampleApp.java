@@ -6,6 +6,7 @@ import android.support.multidex.MultiDex;
 
 import com.flj.latte.app.Latte;
 import com.flj.latte.bluetooth.AppInfo;
+import com.flj.latte.btprint.utils.PushUtils;
 import com.flj.latte.net.rx.AddCookieInterceptor;
 import com.joanzapata.iconify.fonts.FontAwesomeModule;
 
@@ -33,6 +34,8 @@ public class ExampleApp extends Application {
                 .configure();
 
         AppInfo.init(getApplicationContext());
+        //初始化推送
+        PushUtils.pushInit(this);
     }
 
 

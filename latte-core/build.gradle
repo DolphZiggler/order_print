@@ -81,4 +81,7 @@ dependencies {
     api 'io.reactivex:rxandroid:1.0.1'
     //SpinnerEditText
     api 'com.github.z2wenfa:SpinnerEditText:0.9'
+    //JPush
+    api 'cn.jiguang.sdk:jpush:3.1.1'
+    api 'cn.jiguang.sdk:jcore:1.1.9'
 }
